@@ -313,7 +313,7 @@ const DetailedQuestsAppContent: React.FC = () => {
     }
     
     // Перевіряємо структуру userProfile
-    if (!data.userProfile.totalXP || typeof data.userProfile.totalXP !== 'number') return false;
+    if (typeof data.userProfile.totalXP !== 'number') return false;
     
     return true;
   };
@@ -364,12 +364,18 @@ const DetailedQuestsAppContent: React.FC = () => {
         }
         
         // Безпечно оновлюємо стан
-        if (userData.userProfile) setUserProfile(userData.userProfile);
+        if (userData.userProfile) {
+          setUserProfile(userData.userProfile);
+          // Синхронізуємо аватар з selectedCharacter
+          if (userData.userProfile.avatar) {
+            setSelectedCharacter(userData.userProfile.avatar);
+          }
+        }
         if (userData.dailyQuests) setDailyQuests(userData.dailyQuests);
         if (userData.mainQuests) setMainQuests(userData.mainQuests);
         if (userData.completedQuests) setCompletedQuests(new Set(userData.completedQuests));
         if (userData.lastResetDate) setLastResetDate(userData.lastResetDate);
-        if (userData.selectedCharacter) setSelectedCharacter(userData.selectedCharacter);
+        // selectedCharacter тепер синхронізується з userProfile.avatar вище
         if (userData.notifications !== undefined) setNotifications(userData.notifications);
         if (userData.progressReminders !== undefined) setProgressReminders(userData.progressReminders);
         if (userData.soundEnabled !== undefined) setSoundEnabled(userData.soundEnabled);

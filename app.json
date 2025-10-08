@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Life Progress",
+    "slug": "life-progress-app",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lifeprogress.app"
+    },
+    "android": {
+      "package": "com.lifeprogress.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "scheme": "life-progress",
+    "extra": {
+      "eas": {
+        "projectId": "e423b888-87a4-456f-b77b-2b41c88876de"
+      }
+    }
+  }
+}

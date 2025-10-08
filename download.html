@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантажити Life Progress App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .version {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .download-section {
+            margin: 30px 0;
+        }
+        
+        .platform-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .download-btn.android {
+            background: linear-gradient(135deg, #3DDC84 0%, #00C853 100%);
+            box-shadow: 0 4px 15px rgba(61, 220, 132, 0.4);
+        }
+        
+        .download-btn.android:hover {
+            box-shadow: 0 6px 20px rgba(61, 220, 132, 0.6);
+        }
+        
+        .download-btn.ios {
+            background: linear-gradient(135deg, #007AFF 0%, #0056D6 100%);
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+        }
+        
+        .download-btn.ios:hover {
+            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.6);
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .note {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 12px;
+        }
+        
+        .divider {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎯</div>
+        <h1>Life Progress App</h1>
+        <p class="subtitle">Ваша подорож до особистого зростання</p>
+        <div class="version">ℹ️ Версія 1.0.1</div>
+        
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🎮</span>
+                <span>Геймифікація життя з квестами та рівнями</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📊</span>
+                <span>Відстеження прогресу та статистики</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📔</span>
+                <span>Щоденник для рефлексії</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">💾</span>
+                <span>Автоматичне збереження прогресу</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎨</span>
+                <span>3 теми оформлення</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">😊</span>
+                <span>76+ персонажів на вибір</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="download-section">
+            <p class="platform-title">Завантажити для Android</p>
+            <a href="ВСТАВТЕ_ПОСИЛАННЯ_НА_APK" class="download-btn android" download>
+                <span class="icon">🤖</span>
+                Завантажити APK
+            </a>
+        </div>
+        
+        <div class="download-section">
+            <p class="platform-title">Завантажити для iOS</p>
+            <a href="ВСТАВТЕ_ПОСИЛАННЯ_НА_IPA" class="download-btn ios" download>
+                <span class="icon">🍎</span>
+                Завантажити для iPhone
+            </a>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="note">
+            <strong>📧 Підтримка:</strong> program.real.life@gmail.com<br><br>
+            <strong>🔄 Оновлення щоденних квестів:</strong> Кожного дня о 04:00 за київським часом<br><br>
+            <strong>💡 Порада:</strong> Для кращої продуктивності рекомендуємо додати додаток на головний екран
+        </div>
+    </div>
+</body>
+</html>
+
